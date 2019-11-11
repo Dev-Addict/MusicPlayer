@@ -1,9 +1,8 @@
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
-
-buildscript {
-    repositories {
-        google()
-        jcenter()
-        
-    }
-    dependencies
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6e7e85</color>
+    <color name="colorPrimaryDark">#272d2d</color>
+    <color name="colorAccent">#2274a5</color>
+    <color name="colorError">#d00000</color>
+    <color name="colorCloud">#fff8f0</color>
+</resources>
