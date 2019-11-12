@@ -8,6 +8,9 @@
         android:minSdkVersion="16"
         android:targetSdkVersion="29" />
 
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -18,6 +21,11 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <service
+            android:name="ir.ariact.musicplayer.SetSongListService"
+            android:enabled="true"
+            android:exported="true" />
+
         <activity android:name="ir.ariact.musicplayer.LoadingActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,6 +33,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service android:name="ir.ariact.musicplayer.MusicPlayerService" />
     </application>
 
 </manifest>
