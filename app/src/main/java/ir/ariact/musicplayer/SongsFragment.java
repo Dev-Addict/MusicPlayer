@@ -39,8 +39,11 @@ public class SongsFragment extends Fragment {
         songsRecyclerView = view.findViewById(R.id.fragment_songs_songs_recycler_view);
         songsRecyclerViewLayoutManger = new LinearLayoutManager(getActivity());
         songsRecyclerView.setLayoutManager(songsRecyclerViewLayoutManger);
-        songsRecyclerViewAdapter = new songsAdapter();
+        songsRecyclerViewAdapter = new songsAdapter(getActivity());
         songsRecyclerView.setAdapter(songsRecyclerViewAdapter);
+        songsRecyclerView.setHasFixedSize(true);
+        songsRecyclerView.setItemViewCacheSize(SongRepository.getInstance().getSongs().size());
+        songsRecyclerView.setDrawingCacheEnabled(true);
         return view;
     }
 }

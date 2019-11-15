@@ -14,18 +14,21 @@
         android:layout_height="wrap_content">
 
         <com.google.android.material.tabs.TabItem
+            android:id="@+id/activity_main_songs_tab_item"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Songs"
             android:textColor="@color/colorCloud" />
 
         <com.google.android.material.tabs.TabItem
+            android:id="@+id/activity_main_artists_tab_item"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Artists"
             android:textColor="@color/colorCloud" />
 
         <com.google.android.material.tabs.TabItem
+            android:id="@+id/activity_main_albums_tab_item"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Albums"
