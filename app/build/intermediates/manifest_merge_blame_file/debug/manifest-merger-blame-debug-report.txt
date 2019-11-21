@@ -40,49 +40,48 @@
 24-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:14:9-54
 25        android:supportsRtl="true"
 25-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:15:9-35
-26        android:testOnly="true"
-27        android:theme="@style/AppTheme" >
-27-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:16:9-40
-28        <activity android:name="ir.ariact.musicplayer.MainActivity" />
-28-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:17:9-59
-28-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:17:19-47
-29
-30        <service
-30-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:19:9-22:39
-31            android:name="ir.ariact.musicplayer.SetSongListService"
-31-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:20:13-47
-32            android:enabled="true"
-32-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:21:13-35
-33            android:exported="true" />
-33-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:22:13-36
-34
-35        <activity android:name="ir.ariact.musicplayer.LoadingActivity" >
-35-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:24:9-30:20
-35-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:24:19-50
-36            <intent-filter>
-36-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:25:13-29:29
-37                <action android:name="android.intent.action.MAIN" />
-37-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:26:17-69
-37-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:26:25-66
-38
-39                <category android:name="android.intent.category.LAUNCHER" />
-39-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:28:17-77
-39-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:28:27-74
-40            </intent-filter>
-41        </activity>
-42
-43        <service android:name="ir.ariact.musicplayer.MusicPlayerService" />
-43-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:32:9-55
-43-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:32:18-52
-44
-45        <provider
-45-->[com.squareup.picasso:picasso:2.71828] C:\Users\ACT\.gradle\caches\transforms-2\files-2.1\a6b370a04d89c4cae82e13fec837f35e\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
-46            android:name="com.squareup.picasso.PicassoProvider"
-46-->[com.squareup.picasso:picasso:2.71828] C:\Users\ACT\.gradle\caches\transforms-2\files-2.1\a6b370a04d89c4cae82e13fec837f35e\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
-47            android:authorities="ir.ariact.musicplayer.com.squareup.picasso"
-47-->[com.squareup.picasso:picasso:2.71828] C:\Users\ACT\.gradle\caches\transforms-2\files-2.1\a6b370a04d89c4cae82e13fec837f35e\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
-48            android:exported="false" />
-48-->[com.squareup.picasso:picasso:2.71828] C:\Users\ACT\.gradle\caches\transforms-2\files-2.1\a6b370a04d89c4cae82e13fec837f35e\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
-49    </application>
-50
-51</manifest>
+26        android:theme="@style/AppTheme" >
+26-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:16:9-40
+27        <activity android:name="ir.ariact.musicplayer.MainActivity" />
+27-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:17:9-59
+27-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:17:19-47
+28
+29        <service
+29-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:19:9-22:39
+30            android:name="ir.ariact.musicplayer.SetSongListService"
+30-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:20:13-47
+31            android:enabled="true"
+31-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:21:13-35
+32            android:exported="true" />
+32-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:22:13-36
+33
+34        <activity android:name="ir.ariact.musicplayer.LoadingActivity" >
+34-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:24:9-30:20
+34-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:24:19-50
+35            <intent-filter>
+35-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:25:13-29:29
+36                <action android:name="android.intent.action.MAIN" />
+36-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:26:17-69
+36-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:26:25-66
+37
+38                <category android:name="android.intent.category.LAUNCHER" />
+38-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:28:17-77
+38-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:28:27-74
+39            </intent-filter>
+40        </activity>
+41
+42        <service android:name="ir.ariact.musicplayer.MusicPlayerService" />
+42-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:32:9-55
+42-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:32:18-52
+43
+44        <provider
+44-->[com.squareup.picasso:picasso:2.71828] C:\Users\ACT\.gradle\caches\transforms-2\files-2.1\a6b370a04d89c4cae82e13fec837f35e\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+45            android:name="com.squareup.picasso.PicassoProvider"
+45-->[com.squareup.picasso:picasso:2.71828] C:\Users\ACT\.gradle\caches\transforms-2\files-2.1\a6b370a04d89c4cae82e13fec837f35e\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+46            android:authorities="ir.ariact.musicplayer.com.squareup.picasso"
+46-->[com.squareup.picasso:picasso:2.71828] C:\Users\ACT\.gradle\caches\transforms-2\files-2.1\a6b370a04d89c4cae82e13fec837f35e\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+47            android:exported="false" />
+47-->[com.squareup.picasso:picasso:2.71828] C:\Users\ACT\.gradle\caches\transforms-2\files-2.1\a6b370a04d89c4cae82e13fec837f35e\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+48    </application>
+49
+50</manifest>

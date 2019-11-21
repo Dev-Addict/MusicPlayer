@@ -8,37 +8,9 @@
     tools:context=".MainActivity"
     android:background="@color/colorPrimaryDark">
 
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/activity_main_category_tab_layout"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/activity_main_songs_tab_item"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Songs"
-            android:textColor="@color/colorCloud" />
-
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/activity_main_artists_tab_item"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Artists"
-            android:textColor="@color/colorCloud" />
-
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/activity_main_albums_tab_item"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Albums"
-            android:textColor="@color/colorCloud"/>
-
-    </com.google.android.material.tabs.TabLayout>
-
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/activity_main_content_view_pager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:id="@+id/activity_main_fragment_layout"/>
 
 </LinearLayout>

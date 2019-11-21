@@ -20,10 +20,9 @@ public class ContentPagerAdapter extends FragmentPagerAdapter {
             case 1:
                 return ArtistsFragment.newInstance();
             case 2:
-                return SongsFragment.newInstance();
-            default:
-                return SongsFragment.newInstance();
+                return AlbumsFragment.newInstance();
         }
+        return SongsFragment.newInstance();
     }
 
     @Override

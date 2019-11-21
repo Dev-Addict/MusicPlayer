@@ -4,9 +4,9 @@ package ir.ariact.musicplayer;
 import android.net.Uri;
 
 public class Album {
-    String albumName, artistOfAlbum;
-    int numberOfSongs;
-    Uri art;
+    private String albumName, artistOfAlbum;
+    private int numberOfSongs;
+    private Uri art;
 
     public Album(String albumName, String artistOfAlbum, int numberOfSongs, Uri art) {
         this.albumName = albumName;
