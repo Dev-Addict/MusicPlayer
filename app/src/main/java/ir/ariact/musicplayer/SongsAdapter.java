@@ -40,6 +40,17 @@ public class SongsAdapter extends RecyclerView.Adapter<SongsAdapter.SongsViewHol
         }
     }
 
+    SongsAdapter(Context context, String albumName, FragmentManager fragmentManager) {
+        this.context = context;
+        this.fragmentManager = fragmentManager;
+        songs = new LinkedList<>();
+        for (Song song : SongRepository.getInstance().getSongs()) {
+            if (song.getAlbum().equals(albumName)){
+                songs.add(song);
+            }
+        }
+    }
+
     static class SongsViewHolder extends RecyclerView.ViewHolder{
         TextView title, artist, album;
         ImageView art;

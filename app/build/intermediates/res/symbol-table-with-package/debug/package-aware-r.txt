@@ -1230,6 +1230,7 @@ id fill_vertical
 id filled
 id fixed
 id forever
+id fragment_album_songs_songs_recycler_view
 id fragment_albums_songs_recycler_view
 id fragment_artist_songs_songs_recycler_view
 id fragment_artists_songs_recycler_view
@@ -1457,6 +1458,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout draggable_panel
+layout fragment_album_songs
 layout fragment_albums
 layout fragment_artist_songs
 layout fragment_artists

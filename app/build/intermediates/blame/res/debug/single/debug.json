@@ -376,6 +376,10 @@
         "source": "C:\\Users\\ACT\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
+        "merged": "C:\\AndroidProjects\\MusicPlayer\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_album_songs.xml.flat",
+        "source": "C:\\AndroidProjects\\MusicPlayer\\app\\src\\main\\res\\layout\\fragment_album_songs.xml"
+    },
+    {
         "merged": "C:\\AndroidProjects\\MusicPlayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_design_ic_visibility_off.png.flat",
         "source": "C:\\Users\\ACT\\.gradle\\caches\\transforms-2\\files-2.1\\2946ca0ea6c89dab7d7d9fbc18e54292\\material-1.0.0\\res\\drawable-hdpi-v4\\design_ic_visibility_off.png"
     },

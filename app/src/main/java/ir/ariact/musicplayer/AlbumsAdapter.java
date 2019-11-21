@@ -45,7 +45,7 @@ public class AlbumsAdapter extends RecyclerView.Adapter<AlbumsAdapter.AlbumViewH
 
     @Override
     public void onBindViewHolder(@NonNull AlbumViewHolder holder, int position) {
-        Album currentAlbum = SongRepository.getInstance().getAlbum(position);
+        final Album currentAlbum = SongRepository.getInstance().getAlbum(position);
         holder.albumName.setText(currentAlbum.getAlbumName());
         holder.artistOfAlbum.setText(currentAlbum.getArtistOfAlbum());
         holder.numberOfSongs.setText(currentAlbum.getNumberOfSongs() + " Tracks");
@@ -53,7 +53,7 @@ public class AlbumsAdapter extends RecyclerView.Adapter<AlbumsAdapter.AlbumViewH
         holder.view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                fragmentManager.beginTransaction().replace(R.id.activity_main_fragment_layout, SongsFragment.newInstance()).commit();
+                fragmentManager.beginTransaction().replace(R.id.activity_main_fragment_layout, AlbumSongsFragment.newInstance(currentAlbum.getAlbumName())).commit();
             }
         });
     }
