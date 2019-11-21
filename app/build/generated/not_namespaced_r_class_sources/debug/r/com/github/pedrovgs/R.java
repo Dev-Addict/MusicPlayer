@@ -36,14 +36,14 @@ public final class R {
     public static final class id {
         private id() {}
 
-        public static final int drag_view = 0x7f080068;
-        public static final int draggable_view = 0x7f080069;
-        public static final int second_view = 0x7f0800c4;
+        public static final int drag_view = 0x7f08006c;
+        public static final int draggable_view = 0x7f08006d;
+        public static final int second_view = 0x7f0800c9;
     }
     public static final class layout {
         private layout() {}
 
-        public static final int draggable_panel = 0x7f0b002d;
+        public static final int draggable_panel = 0x7f0b002e;
     }
     public static final class styleable {
         private styleable() {}

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\projects\\android\\musicplayer\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
+            "outputFile": "C:\\AndroidProjects\\MusicPlayer\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
             "map": [
                 {
                     "source": "C:\\Users\\ACT\\.gradle\\caches\\transforms-2\\files-2.1\\2946ca0ea6c89dab7d7d9fbc18e54292\\material-1.0.0\\res\\values-large-v4\\values-large-v4.xml",

@@ -1085,6 +1085,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ic_action_artist
 drawable ic_action_single_music
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -1176,6 +1177,10 @@ id add
 id alertTitle
 id all
 id always
+id artist_row_layout_art
+id artist_row_layout_artist_name
+id artist_row_layout_number_of_albums
+id artist_row_layout_number_of_tracks
 id async
 id auto
 id automatic
@@ -1228,6 +1233,7 @@ id fill_vertical
 id filled
 id fixed
 id forever
+id fragment_artists_songs_recycler_view
 id fragment_songs_songs_recycler_view
 id ghost_view
 id gone
@@ -1430,6 +1436,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_loading
 layout activity_main
+layout artist_row_layout
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1446,6 +1453,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout draggable_panel
+layout fragment_artists
 layout fragment_songs
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
@@ -1505,6 +1513,7 @@ string character_counter_content_description
 string character_counter_pattern
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string mtrl_chip_close_icon_content_description
 string password_toggle_content_description

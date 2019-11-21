@@ -8,7 +8,7 @@ public class Song {
     private Uri songUri;
     private String title, artist, album;
     private Uri art;
-    int length;
+    private int length;
 
     public Song(long id, Uri songUri, String title, String artist, String album, Uri art, int length) {
         this.id = id;

@@ -4,13 +4,12 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 
 class Artist {
-    private String artistName, artistKey;
+    private String artistName;
     private int numberOfAlbum, numberOfTrack;
     Uri art;
 
-    public Artist(String artistName, String artistKey, int numberOfAlbum, int numberOfTrack, Uri art) {
+    public Artist(String artistName, int numberOfAlbum, int numberOfTrack, Uri art) {
         this.artistName = artistName;
-        this.artistKey = artistKey;
         this.numberOfAlbum = numberOfAlbum;
         this.numberOfTrack = numberOfTrack;
         this.art = art;
@@ -22,14 +21,6 @@ class Artist {
 
     public void setArtistName(String artistName) {
         this.artistName = artistName;
-    }
-
-    public String getArtistKey() {
-        return artistKey;
-    }
-
-    public void setArtistKey(String artistKey) {
-        this.artistKey = artistKey;
     }
 
     public int getNumberOfAlbum() {

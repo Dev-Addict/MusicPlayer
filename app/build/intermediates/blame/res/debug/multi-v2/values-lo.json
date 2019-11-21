@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\projects\\android\\musicplayer\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lo\\values-lo.xml",
+            "outputFile": "C:\\AndroidProjects\\MusicPlayer\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lo\\values-lo.xml",
             "map": [
                 {
                     "source": "C:\\Users\\ACT\\.gradle\\caches\\transforms-2\\files-2.1\\f01b27bb220ecb79298884ef36a7a2fb\\core-1.1.0\\res\\values-lo\\values-lo.xml",

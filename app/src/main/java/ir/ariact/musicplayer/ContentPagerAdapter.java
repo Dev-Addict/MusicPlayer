@@ -18,7 +18,7 @@ public class ContentPagerAdapter extends FragmentPagerAdapter {
             case 0:
                 return SongsFragment.newInstance();
             case 1:
-                return SongsFragment.newInstance();
+                return ArtistsFragment.newInstance();
             case 2:
                 return SongsFragment.newInstance();
             default:
