@@ -8,15 +8,18 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.squareup.picasso.Picasso;
 
 public class AlbumsAdapter extends RecyclerView.Adapter<AlbumsAdapter.AlbumViewHolder> {
     Context context;
+    private FragmentManager fragmentManager;
 
-    public AlbumsAdapter(Context context) {
+    public AlbumsAdapter(Context context, FragmentManager fragmentManager) {
         this.context = context;
+        this.fragmentManager = fragmentManager;
     }
 
     static class AlbumViewHolder extends RecyclerView.ViewHolder {
@@ -47,6 +50,12 @@ public class AlbumsAdapter extends RecyclerView.Adapter<AlbumsAdapter.AlbumViewH
         holder.artistOfAlbum.setText(currentAlbum.getArtistOfAlbum());
         holder.numberOfSongs.setText(currentAlbum.getNumberOfSongs() + " Tracks");
         Picasso.get().load(currentAlbum.getArt()).placeholder(R.drawable.ic_action_album).into(holder.art);
+        holder.view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                fragmentManager.beginTransaction().replace(R.id.activity_main_fragment_layout, SongsFragment.newInstance()).commit();
+            }
+        });
     }
 
     @Override

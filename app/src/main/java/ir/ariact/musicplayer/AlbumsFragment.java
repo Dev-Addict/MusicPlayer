@@ -40,7 +40,7 @@ public class AlbumsFragment extends Fragment {
         albumsRecyclerView = view.findViewById(R.id.fragment_albums_songs_recycler_view);
         albumsRecyclerViewLayoutManager = new LinearLayoutManager(getActivity());
         albumsRecyclerView.setLayoutManager(albumsRecyclerViewLayoutManager);
-        albumsRecyclerViewAdapter = new AlbumsAdapter(getActivity());
+        albumsRecyclerViewAdapter = new AlbumsAdapter(getActivity(), getActivity().getSupportFragmentManager());
         albumsRecyclerView.setAdapter(albumsRecyclerViewAdapter);
         albumsRecyclerView.setHasFixedSize(true);
         albumsRecyclerView.setItemViewCacheSize(SongRepository.getInstance().getAlbums().size());

@@ -8,15 +8,18 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.squareup.picasso.Picasso;
 
 public class ArtistsAdapter extends RecyclerView.Adapter<ArtistsAdapter.ArtistsViewHolder> {
     private Context context;
+    private FragmentManager fragmentManager;
 
-    public ArtistsAdapter(Context context) {
+    public ArtistsAdapter(Context context, FragmentManager fragmentManager) {
         this.context = context;
+        this.fragmentManager = fragmentManager;
     }
 
     static class ArtistsViewHolder extends RecyclerView.ViewHolder{
@@ -43,11 +46,17 @@ public class ArtistsAdapter extends RecyclerView.Adapter<ArtistsAdapter.ArtistsV
 
     @Override
     public void onBindViewHolder(@NonNull ArtistsViewHolder holder, int position) {
-        Artist currentArtist = SongRepository.getInstance().getArtist(position);
+        final Artist currentArtist = SongRepository.getInstance().getArtist(position);
         holder.artistName.setText(currentArtist.getArtistName());
         holder.numberOfAlbum.setText(currentArtist.getNumberOfAlbum() + "Albums");
         holder.numberOfTracks.setText(currentArtist.getNumberOfTrack() + "Tracks");
         Picasso.get().load(currentArtist.getArt()).placeholder(R.drawable.ic_action_artist).into(holder.art);
+        holder.view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                fragmentManager.beginTransaction().replace(R.id.activity_main_fragment_layout, ArtistSongsFragment.newInstance(currentArtist.getArtistName())).commit();
+            }
+        });
     }
 
     @Override

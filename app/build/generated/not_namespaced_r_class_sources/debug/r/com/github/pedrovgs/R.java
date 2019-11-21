@@ -36,9 +36,9 @@ public final class R {
     public static final class id {
         private id() {}
 
-        public static final int drag_view = 0x7f08006c;
-        public static final int draggable_view = 0x7f08006d;
-        public static final int second_view = 0x7f0800ca;
+        public static final int drag_view = 0x7f080068;
+        public static final int draggable_view = 0x7f080069;
+        public static final int second_view = 0x7f0800cc;
     }
     public static final class layout {
         private layout() {}

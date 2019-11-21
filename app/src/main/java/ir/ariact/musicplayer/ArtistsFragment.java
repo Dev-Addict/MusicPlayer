@@ -41,7 +41,7 @@ public class ArtistsFragment extends Fragment {
         artistsRecyclerView = view.findViewById(R.id.fragment_artists_songs_recycler_view);
         artistsRecyclerViewLayoutManager = new LinearLayoutManager(getActivity());
         artistsRecyclerView.setLayoutManager(artistsRecyclerViewLayoutManager);
-        artistsRecyclerViewAdapter = new ArtistsAdapter(getActivity());
+        artistsRecyclerViewAdapter = new ArtistsAdapter(getActivity(), getActivity().getSupportFragmentManager());
         artistsRecyclerView.setAdapter(artistsRecyclerViewAdapter);
         artistsRecyclerView.setHasFixedSize(true);
         artistsRecyclerView.setItemViewCacheSize(SongRepository.getInstance().getArtists().size());

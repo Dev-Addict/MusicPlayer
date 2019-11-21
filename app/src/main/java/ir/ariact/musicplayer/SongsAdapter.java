@@ -9,16 +9,35 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.squareup.picasso.Picasso;
 
+import java.util.LinkedList;
+import java.util.List;
+
 
 public class SongsAdapter extends RecyclerView.Adapter<SongsAdapter.SongsViewHolder> {
     private Context context;
+    private FragmentManager fragmentManager;
+    private List<Song> songs;
 
-    SongsAdapter(Context context) {
+    SongsAdapter(Context context, FragmentManager fragmentManager) {
         this.context = context;
+        this.fragmentManager = fragmentManager;
+        songs = SongRepository.getInstance().getSongs();
+    }
+
+    SongsAdapter(Context context, FragmentManager fragmentManager, String artistName) {
+        this.context = context;
+        this.fragmentManager = fragmentManager;
+        songs = new LinkedList<>();
+        for (Song song : SongRepository.getInstance().getSongs()) {
+            if (song.getArtist().equals(artistName)){
+                songs.add(song);
+            }
+        }
     }
 
     static class SongsViewHolder extends RecyclerView.ViewHolder{
@@ -45,7 +64,7 @@ public class SongsAdapter extends RecyclerView.Adapter<SongsAdapter.SongsViewHol
 
     @Override
     public void onBindViewHolder(@NonNull SongsViewHolder holder, final int position) {
-        Song currentSong = SongRepository.getInstance().getSong(position);
+        Song currentSong = songs.get(position);
         holder.title.setText(currentSong.getTitle());
         holder.artist.setText(currentSong.getArtist());
         holder.album.setText(currentSong.getAlbum());
@@ -62,6 +81,6 @@ public class SongsAdapter extends RecyclerView.Adapter<SongsAdapter.SongsViewHol
 
     @Override
     public int getItemCount() {
-        return SongRepository.getInstance().getSongs().size();
+        return songs.size();
     }
 }
