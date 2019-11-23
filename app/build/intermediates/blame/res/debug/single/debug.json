@@ -340,12 +340,12 @@
         "source": "C:\\Users\\ACT\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
-        "merged": "C:\\AndroidProjects\\MusicPlayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-mdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
-        "source": "C:\\Users\\ACT\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-ldrtl-mdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
-    },
-    {
         "merged": "C:\\AndroidProjects\\MusicPlayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
         "source": "C:\\Users\\ACT\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
+    },
+    {
+        "merged": "C:\\AndroidProjects\\MusicPlayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-mdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
+        "source": "C:\\Users\\ACT\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-ldrtl-mdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
         "merged": "C:\\AndroidProjects\\MusicPlayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
@@ -864,6 +864,10 @@
         "source": "C:\\Users\\ACT\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-xxhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\AndroidProjects\\MusicPlayer\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_single_fragment.xml.flat",
+        "source": "C:\\AndroidProjects\\MusicPlayer\\app\\src\\main\\res\\layout\\activity_single_fragment.xml"
+    },
+    {
         "merged": "C:\\AndroidProjects\\MusicPlayer\\app\\build\\intermediates\\res\\merged\\debug\\anim_btn_radio_to_on_mtrl_dot_group_animation.xml.flat",
         "source": "C:\\Users\\ACT\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\anim\\btn_radio_to_on_mtrl_dot_group_animation.xml"
     },
@@ -1296,6 +1300,10 @@
         "source": "C:\\AndroidProjects\\MusicPlayer\\app\\src\\main\\res\\layout\\fragment_albums.xml"
     },
     {
+        "merged": "C:\\AndroidProjects\\MusicPlayer\\app\\build\\intermediates\\res\\merged\\debug\\anim_activity_transition_in.xml.flat",
+        "source": "C:\\AndroidProjects\\MusicPlayer\\app\\src\\main\\res\\anim\\activity_transition_in.xml"
+    },
+    {
         "merged": "C:\\AndroidProjects\\MusicPlayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_action_single_music.png.flat",
         "source": "C:\\AndroidProjects\\MusicPlayer\\app\\src\\main\\res\\drawable-hdpi\\ic_action_single_music.png"
     },
@@ -1506,6 +1514,10 @@
     {
         "merged": "C:\\AndroidProjects\\MusicPlayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
         "source": "C:\\Users\\ACT\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
+    },
+    {
+        "merged": "C:\\AndroidProjects\\MusicPlayer\\app\\build\\intermediates\\res\\merged\\debug\\anim_activity_transition_out.xml.flat",
+        "source": "C:\\AndroidProjects\\MusicPlayer\\app\\src\\main\\res\\anim\\activity_transition_out.xml"
     },
     {
         "merged": "C:\\AndroidProjects\\MusicPlayer\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_background_cache_hint_selector_material_light.xml.flat",

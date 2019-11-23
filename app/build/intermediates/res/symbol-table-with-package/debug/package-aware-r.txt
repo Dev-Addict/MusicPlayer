@@ -11,6 +11,8 @@ anim abc_slide_out_bottom
 anim abc_slide_out_top
 anim abc_tooltip_enter
 anim abc_tooltip_exit
+anim activity_transition_in
+anim activity_transition_out
 anim btn_checkbox_to_checked_box_inner_merged_animation
 anim btn_checkbox_to_checked_box_outer_merged_animation
 anim btn_checkbox_to_checked_icon_null_animation
@@ -1170,6 +1172,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id activity_main_fragment_layout
+id activity_single_fragment_frame_layout
 id add
 id alertTitle
 id all
@@ -1441,6 +1444,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_loading
 layout activity_main
+layout activity_single_fragment
 layout artist_row_layout
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -1522,7 +1526,6 @@ string character_counter_content_description
 string character_counter_pattern
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
-string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string mtrl_chip_close_icon_content_description
 string password_toggle_content_description

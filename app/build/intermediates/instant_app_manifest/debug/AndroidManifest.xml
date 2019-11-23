@@ -26,14 +26,15 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="ir.ariact.musicplayer.MainActivity" />
+        <activity android:name="ir.ariact.musicplayer.activity.SingleFragmentActivity" />
+        <activity android:name="ir.ariact.musicplayer.activity.MainActivity" />
 
         <service
-            android:name="ir.ariact.musicplayer.SetSongListService"
+            android:name="ir.ariact.musicplayer.service.SetSongListService"
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name="ir.ariact.musicplayer.LoadingActivity" >
+        <activity android:name="ir.ariact.musicplayer.activity.LoadingActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -41,7 +42,7 @@
             </intent-filter>
         </activity>
 
-        <service android:name="ir.ariact.musicplayer.MusicPlayerService" />
+        <service android:name="ir.ariact.musicplayer.service.MusicPlayerService" />
 
         <provider
             android:name="com.squareup.picasso.PicassoProvider"

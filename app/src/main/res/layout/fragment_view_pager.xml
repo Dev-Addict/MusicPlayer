@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
     android:orientation="vertical"
-    tools:context=".ViewPagerFragment">
+    tools:context=".fragment.ViewPagerFragment">
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/fragment_view_pager_category_tab_layout"
