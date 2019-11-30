@@ -14,9 +14,14 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.squareup.picasso.Picasso;
 
+import org.greenrobot.eventbus.EventBus;
+
 import java.util.LinkedList;
 import java.util.List;
 
+import ir.ariact.musicplayer.event.ShowSongControllerEvent;
+import ir.ariact.musicplayer.model.SongFilter;
+import ir.ariact.musicplayer.model.SongState;
 import ir.ariact.musicplayer.service.MusicPlayerService;
 import ir.ariact.musicplayer.R;
 import ir.ariact.musicplayer.model.Song;
@@ -28,11 +33,15 @@ public class SongsAdapter extends RecyclerView.Adapter<SongsAdapter.SongsViewHol
     private Context context;
     private FragmentManager fragmentManager;
     private List<Song> songs;
+    private SongFilter songFilter;
+    private String filterValue;
 
     public SongsAdapter(Context context, FragmentManager fragmentManager) {
         this.context = context;
         this.fragmentManager = fragmentManager;
         songs = SongRepository.getInstance().getSongs();
+        songFilter = SongFilter.NONE;
+        filterValue = "";
     }
 
     public SongsAdapter(Context context, FragmentManager fragmentManager, String artistName) {
@@ -44,6 +53,8 @@ public class SongsAdapter extends RecyclerView.Adapter<SongsAdapter.SongsViewHol
                 songs.add(song);
             }
         }
+        songFilter = SongFilter.ARTIST;
+        filterValue = artistName;
     }
 
     public SongsAdapter(Context context, String albumName, FragmentManager fragmentManager) {
@@ -55,6 +66,8 @@ public class SongsAdapter extends RecyclerView.Adapter<SongsAdapter.SongsViewHol
                 songs.add(song);
             }
         }
+        songFilter = SongFilter.ALBUM;
+        filterValue = albumName;
     }
 
     static class SongsViewHolder extends RecyclerView.ViewHolder{
@@ -81,7 +94,7 @@ public class SongsAdapter extends RecyclerView.Adapter<SongsAdapter.SongsViewHol
 
     @Override
     public void onBindViewHolder(@NonNull SongsViewHolder holder, final int position) {
-        Song currentSong = songs.get(position);
+        final Song currentSong = songs.get(position);
         holder.title.setText(currentSong.getTitle());
         holder.artist.setText(currentSong.getArtist());
         holder.album.setText(currentSong.getAlbum());
@@ -89,9 +102,13 @@ public class SongsAdapter extends RecyclerView.Adapter<SongsAdapter.SongsViewHol
         holder.view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                EventBus.getDefault().post(new ShowSongControllerEvent());
+                Vars.setSongFilter(songFilter);
+                Vars.setFilterValue(filterValue);
                 Intent intent = new Intent(context, MusicPlayerService.class);
-                intent.putExtra(Vars.getIntentMusicPosition(), position);
+                intent.putExtra(Vars.getIntentMusicPosition(), currentSong.getId());
                 context.startService(intent);
+                Vars.setSongState(SongState.PLAYING);
             }
         });
     }

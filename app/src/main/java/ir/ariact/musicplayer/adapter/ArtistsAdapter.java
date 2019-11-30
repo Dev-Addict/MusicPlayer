@@ -15,7 +15,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.squareup.picasso.Picasso;
 
 import ir.ariact.musicplayer.activity.SingleFragmentActivity;
-import ir.ariact.musicplayer.fragment.ArtistSongsFragment;
 import ir.ariact.musicplayer.R;
 import ir.ariact.musicplayer.model.Artist;
 import ir.ariact.musicplayer.model.SongRepository;

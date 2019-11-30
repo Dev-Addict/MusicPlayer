@@ -1,16 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="bottom"
     android:orientation="vertical"
-    tools:context=".activity.MainActivity"
-    android:background="@color/colorPrimaryDark">
+    tools:context=".activity.MainActivity">
 
     <FrameLayout
+        android:id="@+id/activity_main_fragment_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/activity_main_fragment_layout"/>
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/activity_main_song_controller_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/activity_main_next_button_image_view"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_action_next" />
+
+        <ImageView
+            android:id="@+id/activity_main_play_pause_button_image_view"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_action_play" />
+
+        <ImageView
+            android:id="@+id/activity_main_prev_button_image_view"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_action_prev" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layoutDirection="ltr">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/activity_main_song_art_circle_image_view"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_action_single_music"
+                app:civ_border_color="@color/colorAccent"
+                app:civ_border_width="2dp"
+                app:civ_circle_background_color="@color/colorPrimaryDark"
+                android:layout_marginRight="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/activity_main_title_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="song title"
+                    android:textColor="@color/colorCloud"
+                    android:textSize="12sp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/activity_main_album_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="album"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorCloud"
+                    android:singleLine="true"/>
+
+                <TextView
+                    android:id="@+id/activity_main_artist_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="artist"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorCloud"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>
