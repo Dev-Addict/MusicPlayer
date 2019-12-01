@@ -66,7 +66,7 @@ public class MusicPlayerService extends Service implements MediaPlayer.OnComplet
             musicPlayer.release();
             musicPlayer = null;
         }
-        songId = intent.getLongExtra(Vars.getIntentMusicPosition(), SongRepository.getInstance().getSong(0).getId());
+        songId = intent.getLongExtra(Vars.getIntentMusicPosition(), SongRepository.getInstance().getSong(1).getId());
         musicPlayer = MediaPlayer.create(this, SongRepository.getInstance().getSongById(songId).getSongUri());
         musicPosition = 0;
         musicPlayer.start();
@@ -174,5 +174,9 @@ public class MusicPlayerService extends Service implements MediaPlayer.OnComplet
     public void onDestroy() {
         super.onDestroy();
         EventBus.getDefault().unregister(this);
+    }
+
+    public static MediaPlayer getMusicPlayer() {
+        return musicPlayer;
     }
 }

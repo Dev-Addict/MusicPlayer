@@ -44,6 +44,10 @@
         "source": "C:\\Users\\ACT\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
+        "merged": "C:\\AndroidProjects\\MusicPlayer\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_song.xml.flat",
+        "source": "C:\\AndroidProjects\\MusicPlayer\\app\\src\\main\\res\\layout\\activity_song.xml"
+    },
+    {
         "merged": "C:\\AndroidProjects\\MusicPlayer\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_menu_item.xml.flat",
         "source": "C:\\Users\\ACT\\.gradle\\caches\\transforms-2\\files-2.1\\2946ca0ea6c89dab7d7d9fbc18e54292\\material-1.0.0\\res\\layout\\design_navigation_menu_item.xml"
     },
@@ -104,12 +108,12 @@
         "source": "C:\\Users\\ACT\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable\\btn_checkbox_checked_mtrl.xml"
     },
     {
-        "merged": "C:\\AndroidProjects\\MusicPlayer\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_layout_snackbar_include.xml.flat",
-        "source": "C:\\Users\\ACT\\.gradle\\caches\\transforms-2\\files-2.1\\2946ca0ea6c89dab7d7d9fbc18e54292\\material-1.0.0\\res\\layout\\mtrl_layout_snackbar_include.xml"
-    },
-    {
         "merged": "C:\\AndroidProjects\\MusicPlayer\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media.xml.flat",
         "source": "C:\\Users\\ACT\\.gradle\\caches\\transforms-2\\files-2.1\\b64f80842d3d302e8b4275c4ce2e897c\\media-1.0.0\\res\\layout\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "C:\\AndroidProjects\\MusicPlayer\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_layout_snackbar_include.xml.flat",
+        "source": "C:\\Users\\ACT\\.gradle\\caches\\transforms-2\\files-2.1\\2946ca0ea6c89dab7d7d9fbc18e54292\\material-1.0.0\\res\\layout\\mtrl_layout_snackbar_include.xml"
     },
     {
         "merged": "C:\\AndroidProjects\\MusicPlayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_action_play.png.flat",
@@ -148,12 +152,12 @@
         "source": "C:\\Users\\ACT\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
-        "merged": "C:\\AndroidProjects\\MusicPlayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
-        "source": "C:\\Users\\ACT\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
-    },
-    {
         "merged": "C:\\AndroidProjects\\MusicPlayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
         "source": "C:\\Users\\ACT\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "C:\\AndroidProjects\\MusicPlayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
+        "source": "C:\\Users\\ACT\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
         "merged": "C:\\AndroidProjects\\MusicPlayer\\app\\build\\intermediates\\res\\merged\\debug\\anim_btn_checkbox_to_checked_box_inner_merged_animation.xml.flat",
@@ -246,6 +250,10 @@
     {
         "merged": "C:\\AndroidProjects\\MusicPlayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\ACT\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\AndroidProjects\\MusicPlayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable_stroke_border.xml.flat",
+        "source": "C:\\AndroidProjects\\MusicPlayer\\app\\src\\main\\res\\drawable\\stroke_border.xml"
     },
     {
         "merged": "C:\\AndroidProjects\\MusicPlayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",

@@ -25,11 +25,11 @@
 16-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:10:5-75
 16-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:10:22-72
 17    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-17-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:11:5-76
+17-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:11:5-77
 17-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:11:22-74
 18
 19    <application
-19-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:13:5-37:19
+19-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:13:5-38:19
 20        android:allowBackup="true"
 20-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:14:9-35
 21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -46,49 +46,52 @@
 27        android:testOnly="true"
 28        android:theme="@style/AppTheme" >
 28-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:19:9-40
-29        <activity android:name="ir.ariact.musicplayer.activity.SingleFragmentActivity" />
-29-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:20:9-78
-29-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:20:19-66
-30        <activity android:name="ir.ariact.musicplayer.activity.MainActivity" />
-30-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:21:9-59
-30-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:21:19-56
-31
-32        <service
-32-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:23:9-26:39
-33            android:name="ir.ariact.musicplayer.service.SetSongListService"
-33-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:24:13-55
-34            android:enabled="true"
-34-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:25:13-35
-35            android:exported="true" />
-35-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:26:13-36
-36
-37        <activity android:name="ir.ariact.musicplayer.activity.LoadingActivity" >
-37-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:28:9-34:20
-37-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:28:19-59
-38            <intent-filter>
-38-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:29:13-33:29
-39                <action android:name="android.intent.action.MAIN" />
-39-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:30:17-69
-39-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:30:25-66
-40
-41                <category android:name="android.intent.category.LAUNCHER" />
-41-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:32:17-77
-41-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:32:27-74
-42            </intent-filter>
-43        </activity>
-44
-45        <service android:name="ir.ariact.musicplayer.service.MusicPlayerService" />
-45-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:36:9-63
-45-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:36:18-60
-46
-47        <provider
-47-->[com.squareup.picasso:picasso:2.71828] C:\Users\ACT\.gradle\caches\transforms-2\files-2.1\a6b370a04d89c4cae82e13fec837f35e\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
-48            android:name="com.squareup.picasso.PicassoProvider"
-48-->[com.squareup.picasso:picasso:2.71828] C:\Users\ACT\.gradle\caches\transforms-2\files-2.1\a6b370a04d89c4cae82e13fec837f35e\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
-49            android:authorities="ir.ariact.musicplayer.com.squareup.picasso"
-49-->[com.squareup.picasso:picasso:2.71828] C:\Users\ACT\.gradle\caches\transforms-2\files-2.1\a6b370a04d89c4cae82e13fec837f35e\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
-50            android:exported="false" />
-50-->[com.squareup.picasso:picasso:2.71828] C:\Users\ACT\.gradle\caches\transforms-2\files-2.1\a6b370a04d89c4cae82e13fec837f35e\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
-51    </application>
-52
-53</manifest>
+29        <activity android:name="ir.ariact.musicplayer.activity.SongActivity" />
+29-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:20:9-68
+29-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:20:19-56
+30        <activity android:name="ir.ariact.musicplayer.activity.SingleFragmentActivity" />
+30-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:21:9-69
+30-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:21:19-66
+31        <activity android:name="ir.ariact.musicplayer.activity.MainActivity" />
+31-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:22:9-59
+31-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:22:19-56
+32
+33        <service
+33-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:24:9-27:39
+34            android:name="ir.ariact.musicplayer.service.SetSongListService"
+34-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:25:13-55
+35            android:enabled="true"
+35-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:26:13-35
+36            android:exported="true" />
+36-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:27:13-36
+37
+38        <activity android:name="ir.ariact.musicplayer.activity.LoadingActivity" >
+38-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:29:9-35:20
+38-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:29:19-59
+39            <intent-filter>
+39-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:30:13-34:29
+40                <action android:name="android.intent.action.MAIN" />
+40-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:31:17-69
+40-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:31:25-66
+41
+42                <category android:name="android.intent.category.LAUNCHER" />
+42-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:33:17-77
+42-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:33:27-74
+43            </intent-filter>
+44        </activity>
+45
+46        <service android:name="ir.ariact.musicplayer.service.MusicPlayerService" />
+46-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:37:9-63
+46-->C:\AndroidProjects\MusicPlayer\app\src\main\AndroidManifest.xml:37:18-60
+47
+48        <provider
+48-->[com.squareup.picasso:picasso:2.71828] C:\Users\ACT\.gradle\caches\transforms-2\files-2.1\a6b370a04d89c4cae82e13fec837f35e\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+49            android:name="com.squareup.picasso.PicassoProvider"
+49-->[com.squareup.picasso:picasso:2.71828] C:\Users\ACT\.gradle\caches\transforms-2\files-2.1\a6b370a04d89c4cae82e13fec837f35e\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+50            android:authorities="ir.ariact.musicplayer.com.squareup.picasso"
+50-->[com.squareup.picasso:picasso:2.71828] C:\Users\ACT\.gradle\caches\transforms-2\files-2.1\a6b370a04d89c4cae82e13fec837f35e\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+51            android:exported="false" />
+51-->[com.squareup.picasso:picasso:2.71828] C:\Users\ACT\.gradle\caches\transforms-2\files-2.1\a6b370a04d89c4cae82e13fec837f35e\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+52    </application>
+53
+54</manifest>

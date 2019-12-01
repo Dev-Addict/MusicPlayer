@@ -19,6 +19,8 @@ import org.greenrobot.eventbus.EventBus;
 import java.util.LinkedList;
 import java.util.List;
 
+import ir.ariact.musicplayer.activity.MainActivity;
+import ir.ariact.musicplayer.activity.SongActivity;
 import ir.ariact.musicplayer.event.ShowSongControllerEvent;
 import ir.ariact.musicplayer.model.SongFilter;
 import ir.ariact.musicplayer.model.SongState;
@@ -93,7 +95,7 @@ public class SongsAdapter extends RecyclerView.Adapter<SongsAdapter.SongsViewHol
     }
 
     @Override
-    public void onBindViewHolder(@NonNull SongsViewHolder holder, final int position) {
+    public void onBindViewHolder(@NonNull final SongsViewHolder holder, final int position) {
         final Song currentSong = songs.get(position);
         holder.title.setText(currentSong.getTitle());
         holder.artist.setText(currentSong.getArtist());
@@ -105,10 +107,11 @@ public class SongsAdapter extends RecyclerView.Adapter<SongsAdapter.SongsViewHol
                 EventBus.getDefault().post(new ShowSongControllerEvent());
                 Vars.setSongFilter(songFilter);
                 Vars.setFilterValue(filterValue);
-                Intent intent = new Intent(context, MusicPlayerService.class);
-                intent.putExtra(Vars.getIntentMusicPosition(), currentSong.getId());
-                context.startService(intent);
+                Intent serviceIntent = new Intent(context, MusicPlayerService.class);
+                serviceIntent.putExtra(Vars.getIntentMusicPosition(), currentSong.getId());
+                context.startService(serviceIntent);
                 Vars.setSongState(SongState.PLAYING);
+                MainActivity.startActivity(SongActivity.class);
             }
         });
     }

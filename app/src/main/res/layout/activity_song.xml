@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".activity.SongActivity">
+
+    <TextView
+        android:id="@+id/activity_song_title_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="title"
+        android:textColor="@color/colorCloud"
+        android:textSize="24dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="1000dp">
+
+        <ImageView
+            android:id="@+id/activity_song_art_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_action_single_music"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/activity_song_artist_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="artist"
+        android:textColor="@color/colorCloud"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/activity_song_album_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="album"
+        android:textColor="@color/colorCloud"
+        android:textSize="16dp"
+        android:layout_marginBottom="30dp"/>
+
+    <SeekBar
+        android:id="@+id/activity_song_seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/activity_song_prev_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="left"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_action_prev" />
+
+        <ImageView
+            android:id="@+id/activity_song_play_pause_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_action_play" />
+
+        <ImageView
+            android:id="@+id/activity_song_next_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="right"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_action_next" />
+    </FrameLayout>
+
+</LinearLayout>

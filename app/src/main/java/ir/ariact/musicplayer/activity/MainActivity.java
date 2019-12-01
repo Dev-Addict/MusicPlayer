@@ -2,6 +2,8 @@ package ir.ariact.musicplayer.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -17,6 +19,7 @@ import ir.ariact.musicplayer.R;
 import ir.ariact.musicplayer.event.MoveSongEvent;
 import ir.ariact.musicplayer.event.ShowSongControllerEvent;
 import ir.ariact.musicplayer.event.SongChangedEvent;
+import ir.ariact.musicplayer.event.SongStartedEvent;
 import ir.ariact.musicplayer.fragment.ViewPagerFragment;
 import ir.ariact.musicplayer.model.MoveSongState;
 import ir.ariact.musicplayer.model.PlayMode;
@@ -35,10 +38,16 @@ public class MainActivity extends AppCompatActivity {
             artistTextView,
             albumTextView;
     LinearLayout controllerLayout;
+    static Context thisContext;
+
+    public static void startActivity(Class cls){
+        thisContext.startActivity(new Intent(thisContext, cls));
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        thisContext = this;
         setContentView(R.layout.activity_main);
         getSupportFragmentManager()
                 .beginTransaction()
@@ -94,6 +103,12 @@ public class MainActivity extends AppCompatActivity {
                     Vars.setSongState(SongState.PLAYING);
                     playPauseImageView.setImageResource(R.drawable.ic_action_pause);
                 }
+            }
+        });
+        controllerLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MainActivity.startActivity(SongActivity.class);
             }
         });
     }

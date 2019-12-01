@@ -1114,6 +1114,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable stroke_border
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
@@ -1193,6 +1194,14 @@ id activity_single_fragment_prev_button_image_view
 id activity_single_fragment_song_art_circle_image_view
 id activity_single_fragment_song_controller_layout
 id activity_single_fragment_title_text_view
+id activity_song_album_text_view
+id activity_song_art_image_view
+id activity_song_artist_text_view
+id activity_song_next_image_view
+id activity_song_play_pause_image_view
+id activity_song_prev_image_view
+id activity_song_seek_bar
+id activity_song_title_text_view
 id add
 id alertTitle
 id all
@@ -1465,6 +1474,7 @@ layout abc_tooltip
 layout activity_loading
 layout activity_main
 layout activity_single_fragment
+layout activity_song
 layout artist_row_layout
 layout custom_dialog
 layout design_bottom_navigation_item

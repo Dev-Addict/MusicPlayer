@@ -113,6 +113,12 @@ public class SingleFragmentActivity extends AppCompatActivity {
                 }
             }
         });
+        controllerLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MainActivity.startActivity(SongActivity.class);
+            }
+        });
     }
 
     @Override
