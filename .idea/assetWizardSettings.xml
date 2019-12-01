@@ -35,7 +35,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="url" value="jar:file:/C:/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/image/ic_navigate_before_black_24dp.xml" />
+                                                <entry key="url" value="jar:file:/C:/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/av/ic_shuffle_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -45,7 +45,7 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="outputName" value="ic_action_prev" />
+                                      <entry key="outputName" value="ic_action_slhuffle" />
                                       <entry key="theme" value="CUSTOM" />
                                       <entry key="themeColor" value="2274a5" />
                                     </map>

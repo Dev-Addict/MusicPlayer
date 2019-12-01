@@ -99,6 +99,7 @@ public class SetSongListService extends Service {
             }
         }
         SongRepository.getInstance().setArtists(artistList);
+        SongRepository.getInstance().changePlayMode();
         stopSelf();
         return START_NOT_STICKY;
     }

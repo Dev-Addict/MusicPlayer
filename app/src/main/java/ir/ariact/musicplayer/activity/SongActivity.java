@@ -16,8 +16,10 @@ import org.greenrobot.eventbus.Subscribe;
 
 import ir.ariact.musicplayer.R;
 import ir.ariact.musicplayer.event.MoveSongEvent;
+import ir.ariact.musicplayer.event.PlayModeChangedEvent;
 import ir.ariact.musicplayer.event.SongChangedEvent;
 import ir.ariact.musicplayer.model.MoveSongState;
+import ir.ariact.musicplayer.model.PlayMode;
 import ir.ariact.musicplayer.model.Song;
 import ir.ariact.musicplayer.model.SongRepository;
 import ir.ariact.musicplayer.model.SongState;
@@ -32,7 +34,8 @@ public class SongActivity extends AppCompatActivity {
     ImageView artImageView,
             nextImageView,
             prevImageView,
-            playPauseImageView;
+            playPauseImageView,
+            playModeImageView;
 
     Handler handler = new Handler();
     Runnable runnable = new Runnable() {
@@ -54,11 +57,17 @@ public class SongActivity extends AppCompatActivity {
         nextImageView = findViewById(R.id.activity_song_next_image_view);
         prevImageView = findViewById(R.id.activity_song_prev_image_view);
         playPauseImageView = findViewById(R.id.activity_song_play_pause_image_view);
+        playModeImageView = findViewById(R.id.activity_song_play_mode);
         SongState songState = Vars.getSongState();
         if (songState.equals(SongState.PLAYING)){
             playPauseImageView.setImageResource(R.drawable.ic_action_pause);
         }else{
             playPauseImageView.setImageResource(R.drawable.ic_action_play);
+        }
+        if (Vars.getMusicPlayerPlayMode() == PlayMode.ORDERED){
+            playModeImageView.setImageResource(R.drawable.ic_action_order);
+        }else{
+            playModeImageView.setImageResource(R.drawable.ic_action_slhuffle);
         }
         Song song = SongRepository.getInstance().getSongById(Vars.getSongId());
         titleTextView.setText(song.getTitle());
@@ -108,6 +117,19 @@ public class SongActivity extends AppCompatActivity {
                     Vars.setSongState(SongState.PLAYING);
                     playPauseImageView.setImageResource(R.drawable.ic_action_pause);
                 }
+            }
+        });
+        playModeImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(Vars.getMusicPlayerPlayMode().equals(PlayMode.ORDERED)){
+                    Vars.setMusicPlayerPlayMode(PlayMode.SHUFFLE);
+                    playModeImageView.setImageResource(R.drawable.ic_action_slhuffle);
+                }else{
+                    Vars.setMusicPlayerPlayMode(PlayMode.ORDERED);
+                    playModeImageView.setImageResource(R.drawable.ic_action_order);
+                }
+                SongRepository.getInstance().changePlayMode();
             }
         });
         updateSeekBar();

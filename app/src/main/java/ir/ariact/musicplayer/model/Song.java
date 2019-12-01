@@ -3,7 +3,7 @@ package ir.ariact.musicplayer.model;
 import android.graphics.Bitmap;
 import android.net.Uri;
 
-public class Song {
+public class Song implements Comparable<Song>{
     private long id;
     private Uri songUri;
     private String title, artist, album;
@@ -74,5 +74,10 @@ public class Song {
 
     public void setLength(int length) {
         this.length = length;
+    }
+
+    @Override
+    public int compareTo(Song song) {
+        return this.title.compareTo(song.getTitle());
     }
 }

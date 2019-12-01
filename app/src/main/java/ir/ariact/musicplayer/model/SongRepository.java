@@ -1,6 +1,7 @@
 package ir.ariact.musicplayer.model;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -143,5 +144,13 @@ public class SongRepository {
             }
         }
         return null;
+    }
+
+    public void changePlayMode(){
+        if (Vars.getMusicPlayerPlayMode().equals(PlayMode.SHUFFLE)){
+            Collections.shuffle(songs);
+        }else{
+            Collections.sort(songs);
+        }
     }
 }
